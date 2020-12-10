@@ -7,16 +7,15 @@ export const LoginScreen = ({history}) => {
   const {dispatch} = useContext(AuthContext);
 
   const handleLogin= () => {
-    // history.push('/');
-    // history.replace('/');
-   
+    
+    
     dispatch({
       type: types.login,
       payload: {
         name:'Carlos'
       }
     });
-
+    
     history.replace('/');
   }
   return (
